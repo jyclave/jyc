@@ -1,0 +1,656 @@
+* {
+    font-family: "Syne";
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #B1663C;
+    --text-color: #292F37;
+}
+a li {
+    text-decoration: none;
+}
+body {
+    background-color: white; 
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    z-index: -1;
+}
+header, section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.jean-yves-clave {
+    color:var(--main-color);
+    margin-top: 25px;
+}
+.benedicte-manin p {
+    font-size: 24px;
+}
+.liens-header { 
+    display: block;
+}
+.nav-items {
+    color: var(--main-color);
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+#introduction {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+}
+#introduction figure {
+    flex: 1
+}
+#introduction img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0,1);
+}
+.introduction-container {
+    padding: 20px;
+    background-color:#B1663C;
+    border-radius: 10px;
+}
+#introduction article {
+    flex: 1   
+}
+#introduction h3 {
+    margin-bottom: 1em;
+    color: #f0f0f0;
+}
+#introduction p {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #f0f0f0;   
+}
+.les-soins {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.les-soins section {
+    box-sizing: border-box;
+}
+.les-soins-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.les-soins-section h2 {
+    color: var(--main-color);
+    margin: 50px 0px; 
+}
+.soins-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.soins-card-grid a{
+    text-decoration: none;
+}
+.card-soin {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    height: 500px;
+}
+.card-soin p {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.card-soin img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0,1);
+}
+.card-soin-content {
+    display: block;
+    justify-content:flex-start;
+    width: 100%;
+    height: 100%; 
+}
+.projet-title {
+    font-size: 24px;
+    color: var(--main-color);
+    padding-bottom: 0px;
+}
+.massage-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%; 
+    color: #a34108;
+  }
+  .massages-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; 
+  }
+  .service {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .service__description {
+    margin-bottom: 20px;
+  } 
+  .service__description h3 {
+    margin-bottom: 15px;
+  } 
+  .service__price {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+  .service__price h4 {
+    margin-bottom: 5px;
+  }
+  .service__price span {
+    font-size: 0.9em;
+    color: #666;
+  } 
+.error {
+    color: red;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.succes {
+    color:#2c3e50;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.container-fleurs {
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.container-fleurs h2 {
+    text-align: center;
+    color:#a34108;
+    margin-bottom: 30px;
+}
+.accordion {
+    margin-bottom: 10px;
+}
+.accordion-header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.accordion-header:hover {
+    background-color: #e9ecef;
+}
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #6c757d;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+.accordion-content-inner {
+    padding: 15px;
+}
+.active .accordion-header {
+    background-color: #e9ecef;
+    border-radius: 4px 4px 0 0;
+}
+.active .accordion-header::after {
+    content: '-';
+}
+.active .accordion-content {
+    max-height: 500px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+} 
+#contact h2{
+    margin-bottom: 20px;
+    color: #a34108;
+  }
+#form-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+} 
+#contact input {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  }
+#contact label {
+    margin: 2em 0 1em 0;
+  }
+#contact textarea {
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  } 
+input[type="submit"]{
+    font-family: 'Syne';
+    font-weight: 700;
+    color: white;
+    margin : 2em auto ;
+    width: 180px;
+    text-align: center;
+    border-radius: 60px ;
+    cursor: pointer;
+    background-color:#a34108;
+  }
+input[type="submit"]:hover {
+    color: white;
+    background-color: teal;
+}
+#message {
+    font-size: 22px;
+}
+.footer-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+.footer-container p {
+    font-size: 21px;
+}
+.phone-link {
+    text-decoration: none;
+    color: #a34108;
+}
+.phone-link:hover {
+    color:teal;
+}
+.fa-brands, .fa-solid {
+    font-size: 24px; /* Taille de base des icônes */
+    margin: 0 8px;
+}
+.fa-facebook, .fa-instagram {
+    font-size: 28px; /* Icônes sociales légèrement plus grandes */
+    transition: color 0.3s ease;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.contact-footer h2 {
+    color:#a34108;
+    padding-bottom: 10px;
+}
+.span-contact {
+    margin-left: 15px;
+    font-size: 21px;
+    align-items: middle;
+}
+.fa-brands:hover {
+    color: #4267B2; /* Couleur Facebook au survol */
+}
+  .fa-instagram:hover {
+    color: #E1306C; /* Couleur Instagram au survol */
+}
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #a34108;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+  }
+  .ArrowTop {
+    background-color: #a34108;
+  }  
+  #scrollToTop:hover {
+    background-color: teal;
+  }
+@media screen and (max-width: 1024px) {
+    header, section {
+        padding: 0 30px;
+    }
+    .benedicte-manin p {
+        font-size: 20px;
+    }
+    .nav-items {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    #carousel-container {
+        height: 600px;
+        max-width: 900px;
+    }
+    #introduction {
+        margin-top: 80px;
+    }
+    #introduction img {
+        width: 70%;
+    }
+    .soins-card-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-auto-rows: auto;
+    }
+    .soins-card-grid > :last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 50%; // à ajuster selon la taille souhaitée
+      }
+    .card-soin {
+        height: 450px;
+    }
+    #form-contact {
+        max-width: 450px;
+    }
+    .container-fleurs {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+    .container-fleurs h2 {
+        font-size: 24px;
+    }
+    .accordion-header {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .liens-header {
+        margin-top: 20px;
+    }    
+    .nav-items {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    #introduction {
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+    #introduction figure {
+        margin-bottom: 30px;
+    }
+    #introduction img {
+        width: 80%;
+    }
+    #introduction article {
+        padding: 20px;
+    }
+    #introduction p {
+        margin-right: 0;
+        text-align: left;
+    }
+    .les-soins {
+        margin-top: 140px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .les-soins-section h2 {
+        margin-top: 10px;
+    }
+    .soins-card-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .soins-card-grid > :last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
+      }
+    .card-soin {
+        height: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .card-soin img {
+        height: 200px;
+    }
+    #contact {
+        padding: 0 20px;
+    }
+
+    #form-contact {
+        max-width: 100%;
+    }
+    input[type="submit"] {
+        width: 150px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        gap: 2rem;
+      }     
+      .contact-footer {
+        width: 100%;
+      }     
+      .contact-footer h2 {
+        margin-bottom: 1rem;
+      }      
+      .fa-brands, .fa-solid {
+        font-size: 20px;
+      }      
+      .fa-facebook, .fa-instagram {
+        font-size: 24px;
+        margin: 0 12px;
+      }
+      .container-fleurs {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+      }
+      .container-fleurs h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .accordion-header {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .accordion-content-inner {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .contact-footer span.span-contact {
+        display: block;
+        margin: 8px 0 16px 0;
+        font-size: 0.85rem;
+      }     
+    .contact-footer .fa-solid {
+        width: auto;
+        margin-right: 5px;
+      }     
+    }
+@media screen and (max-width: 425px) {
+    header, section {
+        padding: 0 15px;
+    }
+    .jean-yves-clave {
+        font-size: 20px;
+    
+    }
+    .les-soins {
+        margin-top: 30px;
+    }
+    .benedicte-manin h1 {
+        font-size: 20px;
+    }
+    .benedicte-manin p {
+        font-size: 16px;
+    }
+    .liens-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-items {
+        margin: 5px;
+        font-size: 16px;
+    }
+    #introduction {
+        margin-top: 30px;
+    }
+    #introduction img {
+        width: 90%;
+    }
+    #introduction h3 {
+        font-size: 18px;
+    }
+    #introduction p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .les-soins-section h2 {
+        margin: 30px 0;
+        font-size: 20px;
+    }
+    .title {
+        margin-bottom: 15px;
+    }
+    .card-soin {
+        height: auto;
+    }
+    .card-soin img {
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .card-soin p {
+        padding: 8px;
+        font-size: 16px;
+    }
+    #contact h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #contact p {
+        font-size: 14px;
+    }
+    #contact label {
+        margin: 1.5em 0 0.5em 0;
+        font-size: 14px;
+    }
+    #contact input {
+        height: 40px;
+        font-size: 1em;
+    }
+    #message {
+        font-size: 16px;
+    }
+    input[type="submit"] {
+        width: 130px;
+        height: 40px;
+        margin: 1.5em auto;
+    }
+    .massages-section {
+        flex-direction: column;
+    }
+    .container-fleurs {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .container-fleurs h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .accordion-header {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .accordion-header::after {
+        font-size: 18px;
+        right: 10px;
+    }
+    .accordion-content-inner {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .jean-yves-clave {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .jean-yves-clave {
+        font-size: 14px;
+    }
+}
