@@ -1,37 +1,4 @@
 
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-const slideInterval = 3000; // Intervalle en millisecondes (ici 3 secondes)
-
-// Fonction pour passer au slide suivant
-function nextSlide() {
-    // Retirer l'attribut data-active du slide actuel
-    slides[currentSlide].removeAttribute('data-active');
-    
-    // Passer au slide suivant
-    currentSlide = (currentSlide + 1) % slides.length;
-    
-    // Ajouter l'attribut data-active au nouveau slide
-    slides[currentSlide].setAttribute('data-active', '');
-}
-
-// Fonction pour démarrer le slideshow
-function startSlideshow() {
-    setInterval(nextSlide, slideInterval);
-}
-
-// Fonction pour initialiser le carousel
-function initCarousel() {
-    // S'assurer que le premier slide est actif au chargement
-    slides[0].setAttribute('data-active', '');
-    
-    // Démarrer le slideshow automatique
-    startSlideshow();
-}
-
-// Démarrer le carousel quand le DOM est chargé
-document.addEventListener('DOMContentLoaded', initCarousel);
-
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form-contact');
     
