@@ -146,6 +146,15 @@ li {
     font-size: 24px;
     color: var(--main-color);
     padding-bottom: 0px;
+    text-decoration: none;
+}
+.projet-title:hover {
+    text-decoration: underline;
+  }
+.projet-title a,
+.projet-title a:visited {
+  color: #B1663C; 
+  text-decoration: none;
 }
 .massage-container {
     margin: 0 auto;
