@@ -157,6 +157,42 @@ li {
   color: #B1663C; 
   text-decoration: none;
 }
+.tech-logos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+.icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* hérite de la couleur du parent */
+  }
+  .html-icon { color: #e34f26; }     /* Orange HTML */
+  .css-icon { color: #264de4; }      /* Bleu CSS */
+  .js-icon { color: #f7df1e; }       /* Jaune JS */
+  .react-icon { color: #61dafb; }    /* Bleu clair React */  
+
+.html-icon:hover {
+    color: #b32c0d;
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+  }  
+.css-icon:hover {
+    color: #264de4;
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+  }   
+.js-icon:hover {
+    color: #f7df1e;
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+  } 
+  html {
+    scroll-behavior: smooth;
+  }
 .massage-container {
     margin: 0 auto;
     padding: 20px;
@@ -236,6 +272,7 @@ li {
     border-radius: 4px;
     position: relative;
     transition: all 0.3s ease;
+    color: #a34108;
 }
 .accordion-header:hover {
     background-color: #e9ecef;
@@ -260,6 +297,7 @@ li {
 }
 .accordion-content-inner {
     padding: 15px;
+    color: #a34108;
 }
 .active .accordion-header {
     background-color: #e9ecef;
@@ -337,16 +375,6 @@ input[type="submit"]:hover {
 .phone-link:hover {
     color:teal;
 }
-.fa-brands, .fa-solid {
-    font-size: 24px; /* Taille de base des icônes */
-    margin: 0 8px;
-}
-.fa-facebook, .fa-instagram {
-    font-size: 28px; /* Icônes sociales légèrement plus grandes */
-    transition: color 0.3s ease;
-    padding-top: 10px;
-    cursor: pointer;
-}
 .contact-footer h2 {
     color:#a34108;
     padding-bottom: 10px;
@@ -355,12 +383,6 @@ input[type="submit"]:hover {
     margin-left: 15px;
     font-size: 21px;
     align-items: middle;
-}
-.fa-brands:hover {
-    color: #4267B2; /* Couleur Facebook au survol */
-}
-  .fa-instagram:hover {
-    color: #E1306C; /* Couleur Instagram au survol */
 }
 #scrollToTop {
     position: fixed;
@@ -552,8 +574,7 @@ input[type="submit"]:hover {
         padding: 0 15px;
     }
     .jean-yves-clave {
-        font-size: 20px;
-    
+        font-size: 20px;   
     }
     .les-soins {
         margin-top: 30px;
@@ -607,7 +628,7 @@ input[type="submit"]:hover {
 
     .card-soin p {
         padding: 8px;
-        font-size: 16px;
+        font-size: 18px;
     }
     #contact h2 {
         font-size: 20px;
@@ -645,7 +666,7 @@ input[type="submit"]:hover {
     }
     .accordion-header {
         padding: 8px;
-        font-size: 14px;
+        font-size: 16px;
     }
     .accordion-header::after {
         font-size: 18px;
