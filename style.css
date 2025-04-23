@@ -150,6 +150,7 @@ li {
 }
 .projet-title:hover {
     text-decoration: underline;
+    color: teal;
   }
 .projet-title a,
 .projet-title a:visited {
