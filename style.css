@@ -434,7 +434,7 @@ input[type="submit"]:hover {
     .soins-card-grid > :last-child {
         grid-column: 1 / -1;
         justify-self: center;
-        width: 50%; // à ajuster selon la taille souhaitée
+        width: 50%;
       }
     .card-soin {
         height: 450px;
