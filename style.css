@@ -70,7 +70,7 @@ li {
 #introduction img {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 65%;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0,1);
 }
@@ -570,6 +570,8 @@ input[type="submit"]:hover {
         justify-content: center;
         align-items: center;
         gap: 10px;
+        margin-top: 15px;
+        padding-left: 10px;
     }
     .nav-items {
         margin: 5px;
