@@ -82,7 +82,7 @@ li {
 #introduction article {
     flex: 1   
 }
-#introduction h3 {
+#introduction h2 {
     margin-bottom: 1em;
     color: #f0f0f0;
 }
