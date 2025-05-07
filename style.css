@@ -72,7 +72,7 @@ li {
     margin: auto;
     width: 65%;
     border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0,1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .introduction-container {
     padding: 20px;
@@ -134,7 +134,7 @@ li {
     height: 190px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0,1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .card-soin-content {
     display: block;
